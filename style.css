@@ -1,0 +1,20 @@
+body{
+    background: #222 ;
+    color: #fff ;
+}
+.links li a{
+    color: skyblue;
+}
+.links li a:visited{
+    color: lightgreen;
+}
+.links li a:hover{
+    color: #fff ;
+}
+.links li a:active {
+    color: tomato;
+}
+
+#test{
+    background: red;
+}
