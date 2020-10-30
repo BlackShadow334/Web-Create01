@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+     <script src="./script.js"></script>
+<style>
+
+</style>
+    </head>
+    <body>
+<nav>
+<!--history..............................-->
+    <button id="hist" onclick="history()">History</button>
+    <div id="inp3"></div>
+<!--historyend...........................-->
+<!--about................................-->
+    <div id="inf">
+<p>Version : 1.2</p>
+<p>updated on : 23 jan, 2020</p>
+<p>Created by : BLaCK ShaDow</p>
+<p>Released on : 21 jan, 2020</p>
+<p>For any suggestions please comment.</p>
+<p><a id="follow" href="https://www.sololearn.com/Profile/15875324/?ref=app">⁠Follow me⁠</a></p>
+
+    </div>
+    <button id="abt" onclick="abo()">About</button>
+<!--aboutend..............................-->
+</nav>
+<br>
+<!--calcu.................-->
+    <div id="disply">
+        <inpt id="inp0">
+        
+        <input id="inp2" type="tel">⁠</input>
+        <input id="inp1" type="tel">⁠</input>
+    </div>
+<table bordr="">
+  <tr>
+      <td id="c" onclick="clr()">C</td>
+      <td id="%" onclick="num('%'); goup()">%</td>
+      <td id="/" onclick="num('/'); goup()">/</td>
+      <td id="back" onclick="bac()">⌫</td>
+  </tr>
+  <tr>
+      <td id="7" onclick="num('7')">7</td>
+      <td id="8" onclick="num('8')">8</td>
+      <td id="9" onclick="num('9')">9</td>
+      <td id="*" onclick="num('*'); goup()">*</td>
+  </tr>
+  <tr>
+      <td id="4" onclick="num('4')">4</td>
+      <td id="5" onclick="num('5')">5</td>
+      <td id="6" onclick="num('6')">6</td>
+      <td id="-" onclick="num('-'); goup()">-</td>
+  </tr>
+  <tr>
+      <td id="1" onclick="num('1')">1</td>
+      <td id="2" onclick="num('2')">2</td>
+      <td id="3" onclick="num('3')">3</td>
+      <td id="+" onclick="num('+'); goup()">+</td>
+  </tr>
+  <tr>
+      <td id="ac" onclick="alclr()">AC</td>
+      <td id="0" onclick="num('0')">0</td>
+      <td id="dot" onclick="num('.')">.</td>
+      <td id="=" onclick="equl()">=</td>
+  </tr>
+</table>
+<!-- end calcu--> 
+<footer>
+    
+</footer>
+<script>
+
+</script>            
+    </body>
+</html>

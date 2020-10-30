@@ -1,0 +1,43 @@
+*{margin:0;padding:0;border-style:border-box;}
+
+body {
+    background:#222;
+    color:white;
+}
+#pac{
+    position:fixed;
+    height:3em;
+    Width:3em;
+    background:;
+    border-radius:50% 50% 50% 50%;
+    top:calc(50% - 1.5em);
+    left:calc(50% - 1.5em);
+    transform:rotate(45deg);
+    background:radial-gradient(circle ,orange -30% ,red 100%)
+}
+#pac:after{
+    position:absolute;
+    content:"";
+    background:#222;
+    height:1.5em;
+    width:1.5em;
+    border-radius:100% 0% 0% 0%;
+    transform:skew(30deg , 30deg);
+    animation:chew 1s ease infinite;
+}
+@keyframes chew {
+    0% ,100%{ 
+        transform:skew(0deg , 0deg); }
+    50%{
+        transform:skew(45deg , 45deg);
+        height:1.2em;
+        width:1.2em; }
+}
+.bullets{
+    position:fixed;
+    height:1.5em;
+    width:1.5em;
+    background:green;
+    transition:;
+}
+

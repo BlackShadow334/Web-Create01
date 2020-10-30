@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loop-Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script><script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+    
+
+
+    </head>
+    <body>
+    <div id="text"></div>
+<div id="wheel">
+    
+</div>
+    
+<nav id="nav">
+<button id="btn1"> ⌬ </button>
+<button id="btn2"> ⌾ </button>
+<button id="btn3"> ⛃ </button>
+<button id="btn4"> ☄ </button>
+<button id="btn5"> ⎗ </button>
+<button id="btn6"> ⍰ </button>
+<div id="navopnc">⨵ </div>
+
+<form id="form1">GENERAL<br>
+numb <input value="30" id="numbc"><br />
+time <input value="5" id="timec">s <br />
+tint <input value="0.04" id="tintc">s <br />
+heig <input value="1" id="heigc">em <br />
+widt <input value="1" id="widtc">em <br />
+dint <input value="0.2" id="dintc">em <br />
+view <input value="60" id="viewc">deg <br />
+Wtim <input value="0" id="wtimc">s <br />
+Wviw <input value="0" id="wviwc">deg <br />
+<input type="reset" value="CLR">
+</form>
+
+<form id="form2">COLOURS<br>
+Background color<br>
+00% <input value="" id="bgcol00c">, 
+25% <input value="" id="bgcol25c"><br />
+50% <input value="#0000ff0a" id="bgcol50c">, 
+75% <input value="" id="bgcol75c"><br />
+0C% <input value="" id="bgcol100c"><br />
+Border color<br>
+00% <input value="#f00" id="bdcol00c">, 
+25% <input value="#0f0"  id="bdcol25c"><br />
+50% <input value="#fff" id="bdcol50c">, 
+75% <input value="#0ff" id="bdcol75c"><br />
+0C% <input value="#f00" id="bdcol100c"><br />
+Opacity<br>
+00% <input value="0.4" id="opact00c">, 
+25% <input value="0.4" id="opact25c"><br />
+50% <input value="0.4" id="opact50c">, 
+75% <input value="0.4" id="opact75c"><br />
+0C% <input value="0.4" id="opact100c"><br />
+<input type="reset" value="CLR">
+</form>
+
+<form id="form3">STRUCTURE<br>
+Height<br>
+00% <input value="em" id="heigh00c">, 
+25% <input value="em" id="heigh25c"><br />
+50% <input value="em" id="heigh50c">, 
+75% <input value="em" id="heigh75c"><br />
+0C% <input value="em" id="heigh100c"><br />
+Width<br>
+00% <input value="em" id="width00c">, 
+25% <input value="em" id="width25c"><br />
+50% <input value="em" id="width50c">, 
+75% <input value="em" id="width75c"><br />
+0C% <input value="em" id="width100c"><br />
+Border size<br>
+00% <input value="2px" id="bdsiz00c">, 
+25% <input value="2px" id="bdsiz25c"><br />
+50% <input value="2px" id="bdsiz50c">, 
+75% <input value="2px" id="bdsiz75c"><br />
+0C% <input value="2px" id="bdsiz100c"><br />
+Border radius<br>
+00% <input value="50%" id="bdrad00c">, 
+25% <input value="50%" id="bdrad25c"><br />
+50% <input value="50%" id="bdrad50c">, 
+75% <input value="50%" id="bdrad75c"><br />
+0C% <input value="50%" id="bdrad100c"><br />
+<input type="reset" value="CLR">
+</form>
+
+<form id="form4">DYNAMICS<br>
+translateX()<br>
+00% <input value="0vw" id="tranx00c">, 
+25% <input value="vw" id="tranx25c"><br />
+50% <input value="0vw" id="tranx50c">, 
+75% <input value="vw" id="tranx75c"><br />
+0C% <input value="0vw" id="tranx100c"><br />
+translateY()<br>
+00% <input value="0vh" id="trany00c">, 
+25% <input value="vh" id="trany25c"><br />
+50% <input value="130vh" id="trany50c">, 
+75% <input value="vh" id="trany75c"><br />
+0C% <input value="0vh" id="trany100c"><br />
+translateZ()<br>
+00% <input value="0vw" id="tranz00c">, 
+25% <input value="vw" id="tranz25c"><br />
+50% <input value="0vw" id="tranz50c">, 
+75% <input value="vw" id="tranz75c"><br />
+0C% <input value="0vw" id="tranz100c">
+<br /><br />
+rotateX()<br>
+00% <input value="0deg" id="rotax00c">, 
+25% <input value="deg" id="rotax25c"><br />
+50% <input value="0deg" id="rotax50c">, 
+75% <input value="deg" id="rotax75c"><br />
+0C% <input value="0deg" id="rotax100c"><br />
+rotateY()<br>
+00% <input value="0deg" id="rotay00c">, 
+25% <input value="deg" id="rotay25c"><br />
+50% <input value="540deg" id="rotay50c">, 
+75% <input value="deg" id="rotay75c"><br />
+0C% <input value="0deg" id="rotay100c"><br />
+rotateZ()<br>
+00% <input value="0deg" id="rotaz00c">, 
+25% <input value="deg" id="rotaz25c"><br />
+50% <input value="0deg" id="rotaz50c">, 
+75% <input value="deg" id="rotaz75c"><br />
+0C% <input value="0deg" id="rotaz100c"><br />
+<input type="reset" value="CLR">
+</form>
+
+<form id="form5">SAMPLES<br>
+<li id="list1c">sample 1</li>
+<li id="list2c">sample 2</li>
+<li id="list3c">sample 3</li>
+<li id="list4c">sample 4</li>
+<br>
+</form >
+
+<form id="form6">ABOUT<br>
+_ Version : 1.3<br/>
+_ updated on :<br /> 30 jan, 2020<br/>
+_ Created by :<br /> BLaCK ShaDow<br/>
+_ Released on :<br /> 22 jan, 2020<br/>
+</form >
+</nav>
+
+ <script src='./script.js'></script>
+        
+    </body>
+</html>

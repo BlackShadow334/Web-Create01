@@ -1,0 +1,137 @@
+body {margin:; padding:; 
+    border-style:border-box ;
+    background:#222;
+    color:#0f0;
+    font-family:Courier;
+    font-weight:900;
+    user-select:none;
+}
+#ball{
+    position:relative ;
+    width:1.4em;
+    height:1.4em;
+    border-radius:50%;
+    left:0;
+    top:0;
+    transition:0.5s ease-in-out;
+}
+#ball:active{
+    background:red;
+    height:0.1px;
+    width:0.1px;
+    
+}
+#ovr{
+    position:fixed;
+    display:;
+    background:#090;
+    font-size:1.5em;
+    padding-left:5px;
+    padding-right:5px;
+    color:white;
+    top:40vh;
+    left:50%;
+    transform:translate(-50%);
+    text-align:center ;
+    margin-bottom:5px;
+}
+#clicstrt{
+    transition:10s ease;
+    position:fixed;
+    display:;
+    background:#333;
+    color:white;
+    font-size:1em;
+    font-family:courier;
+    outline:none;
+    padding:2px;
+    padding-left:5px;
+    padding-right:5px;
+    border:1px solid #0f0;
+    top:70vh;
+    left:50%;
+    transition:5s ease;
+    transform:translate(-50%);
+    text-align:center ;
+    margin-bottom:5px;
+}
+#clicstrt:actve{color:#333;
+    background:white;}
+#reslt{
+    display:;
+    margin-top:5px;
+    margin-bottom:5px;
+    background:#0a0;
+    padding-left:5px;
+    color:white  ; 
+    user-select:none;
+}
+a{
+    color:white;
+    background:#090;
+    text-decoration:none;
+    padding-left:5px;
+    padding-right:5px;
+}
+a:active{background:#333;}
+#space{
+    position:fixed;
+}
+#timr{
+    position:fixed;
+    right:0;
+    margin-right:5px;
+}
+#infoo{
+    position:fixed;
+    right:5px;
+    background:#333;
+    color:white;
+    font-size:1em;
+    font-family:courier;
+    outline:none;
+    padding:2px;
+    padding-left:5px;
+    padding-right:5px;
+    border:1px solid #0f0;
+}
+#infoo:active{background:#0f0;}
+#infoos{
+    position:fixed;
+    right:5px;
+    background:#333;
+    color:white;
+    font-size:1em;
+    font-family:courier;
+    outline:none;
+    padding:2px;
+    padding-left:5px;
+    padding-right:5px;
+    border:1px solid #0f0;
+    z-index:1;
+}
+#infoos:active{background:#0f0;}
+#infodis{
+    position:fixed;
+    disply:none;
+    padding-left:10px;
+    right:0;
+    transition:1s ease;
+    height:0;
+    width:0;
+    overflow:auto;
+    background:#123;
+    color:#0f0;
+    z-index:1;
+}
+#lst {background:#222;}
+#lvl ,#spe{display:none;}
+#timrin{
+    width:10%;
+    background:#234;
+    color:white;
+    outline:none;
+    border: 1px solid #0d0;
+    padding-left:5px;
+    padding-right:5px;
+}

@@ -1,0 +1,32 @@
+*{border-style:border-box;}
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#123;
+    color:white;
+}
+.b{
+    position:fixed;
+    width:10%;
+    border:1px solid #0fo;
+    transition:1s ease;
+    padding-left:5px;
+    padding-right:5px;
+}
+#btn0{
+    position:fixed;
+    left:50%;
+    transform:translate(-50%);
+    top:40vh;
+    outline:none;
+    background:#021;
+    border:1px solid #aaa;
+    color:#0f0;
+    font-family:Courier;
+    font-size:1.5em;
+    
+}
+#btn0:active{
+    Background:white;
+}

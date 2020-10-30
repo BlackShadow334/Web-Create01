@@ -1,0 +1,166 @@
+Body{
+    margin:0;padding:0;
+    box-sizing:border-box;
+    color:#eee;
+    background:#222;
+    font-size:1em;
+    font-family:Courier new;
+    color:#aaa;
+    user-select:none;
+}
+@keyframes ani{
+/*
+ 0% ,100%{transform:translateX(0vh)
+                       translateY(0vh)
+                       translateZ(0vh)
+                       rotateX(0deg)
+                       rotateY(0deg)
+                       rotateZ(0deg);
+        border:2px solid #f00;
+        height:;
+        width:;
+        border-radius:50%;
+        background:;
+        opacity:0.4
+   
+    } 
+    
+    25%{transform:translateX(0vh)
+                       translateY(70vh)
+                       translateZ(0vh)
+                       rotateX(0deg)
+                       rotateY(0deg)
+                       rotateZ(0deg);
+        border:2px solid #0f0;
+        height:;
+        width:;
+        border-radius:50%;
+        background:;
+        opacity:0.4;
+    }
+    50%{transform:translateX(0vh)
+                  translateY(130vh)
+                  translateZ(0vh)
+                  rotateX(0deg)
+                  rotateY(0deg)
+                  rotateZ(0deg);
+        border:2px solid #fff;
+        height:;
+        width:;
+        border-radius:50%;
+        background:#0000ff0a;
+        opacity:0.4
+    }75%{transform:translateX(0vh)
+                       translateY(60vh)
+                       translateZ(0vh)
+                       rotateX(0deg)
+                       rotateY(0deg)
+                       rotateZ(0deg);
+        border:2px solid #0ff;
+        height:;
+        width:;
+        border-radius:50%;
+        background:;
+        opacity:0.4
+    }
+    */
+}
+@keyframes whole{
+    0%{transform:rotateY(0deg);}
+    100%{transform:rotateY(360deg);}
+}
+
+#wheel{
+    position:relative;
+    top:20vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transform-style:preserve-3d;
+    perspective-origin:50% 50%;
+    perspective:1000px;
+    
+
+}
+#wheel div{
+    position:absolute;
+    line-height:0em;
+    text-align:center;
+    transform-origin:50% 50%;
+}
+
+
+#nav{
+    position:absolute;
+    background:#000;
+    bottom:1vh;
+    left:-15.7em;
+    padding:5px;
+    border:0.1px solid #444;
+    color:#aaa;
+    border-left:none;
+    transition:0.3s;
+    width:15em;
+    height:1.8em;
+}
+
+#nav button{
+    background:#222;
+    border:0.1px solid #444;
+    color:#ccc;
+    font-size:1.2em;
+    outline:none;
+}
+#nav button:hover ,#navopnc:active ,input:hover{
+    Background:#063;
+}
+#navopnc{
+    position:absolute;
+    font-size:1.4em;
+    bottom:3px;
+    right:-24px;
+    padding-right:5px;
+    background:#000;
+    color:#ccc;
+    border-radius:0 50% 50% 0;
+    border:0.1px solid #444;
+}
+#nav form{
+    position:absolute;
+    bottom:105%;
+    background:#000;
+    border:0.1px solid #444;
+    overflow:auto;
+    max-height:75vh;
+    color:#ccc;
+    border-left:none;
+    padding:5px;
+    
+}
+#form1 , #form2 ,#form3 , #form4 {user-select:all}
+
+#nav form::selection ,input::selection{
+    background:#090;
+    color:#fff;
+}
+input{
+    position:relative;
+    width:4em;
+    margin:2px;
+    outline:none;
+    border:0.1px solid #444;
+    background:#123;
+    color:#ccc;
+}
+
+#form5 li{
+    list-style-type:none;
+    padding:5px;
+    
+}
+#form5 li:nth-child(odd){
+    background:#333;
+}
+#form5 li:hover{
+    background:#063;
+}

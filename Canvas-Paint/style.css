@@ -1,0 +1,64 @@
+*{margin:0; padding:0;border-style:border-box;}
+body{
+    color:white;
+    background:#222;
+}
+#nav{
+    background-color:black;
+    height:2em;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index:2;
+}
+#nav button{
+    background:#333;
+    color:white;
+    Outline:none;
+    margin:6px;
+    padding-bottom:px;
+    border:white;
+    height:1.5em;
+    width:3em;
+}
+#navbtn{
+    position:fixed;
+    background:#333;
+    right:0;
+    color:white;
+    Outline:none;
+    margin:6px;
+    padding-bottom:px;
+    border:white;
+    height:1.5em;
+    width:3em;
+    z-index:4;
+}
+#nav input{ 
+     position:relative ;
+     width:10em;
+     left:2em;
+}
+#nav button:hover{
+    background:green;
+    transform:translateY(0em);
+}
+#area{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#222;
+    z-index:0;
+}
+#areatouch{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:transparent;
+    z-index:1;
+}
